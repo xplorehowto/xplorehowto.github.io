@@ -1,0 +1,30 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+# This is the default if none specified as defined in _config.yml
+
+entries:
+- title: Sidebar
+  levels: one
+  folders:
+
+  - title: Home
+    output: web
+    folderitems:
+    - title: Overview
+      url: /
+      output: web
+
+  - title: Topics
+    output: web
+    folderitems:
+    - title: AI
+      url: /ai
+      output: web
+    - title: AWS
+      url: /aws
+      output: web
+    - title: Cloud
+      url: /cloud
+      output: web
+    - title: Google Cloud
+      url: /gcp
+      output: web

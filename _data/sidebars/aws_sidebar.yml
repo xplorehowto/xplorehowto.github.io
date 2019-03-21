@@ -1,0 +1,61 @@
+entries:
+- title: Sidebar
+  product: AWS
+  folders:
+
+  - title: AWS
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /aws
+      output: web
+      type: homepage
+
+  - title: Compute
+    output: web
+    folderitems:
+    - title: EC2
+      url: /aws_ec2
+      output: web
+    - title: Lambda
+      url: /aws_tbd
+      output: web
+    - title: ECS
+      url: /aws_tbd
+      output: web
+    - title: Batch
+      url: /aws_tbd
+      output: web
+    - title: Lightsail
+      url: /aws_tbd
+      output: web
+
+  - title: IoT
+    output: web
+    folderitems:
+    - title: IoT Core
+      url: /aws_tbd
+      output: web
+
+  - title: SIC
+    output: web
+    folderitems:
+    - title: IAM
+      url: /aws_iam
+      output: web
+    - title: KMS
+      url: /aws_kms
+      output: web

@@ -1,0 +1,10 @@
+<footer class="explore-footer">
+            <div class="row">
+                <div class="col-lg-12 footer">
+<p><img src="{{ site.baseurl }}/{{ "images/logos/logo-only.png" }}" alt="Explore" class="footer_logo"/></p>
+               &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved. <br />
+{% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }} <br />
+
+                </div>
+            </div>
+</footer>

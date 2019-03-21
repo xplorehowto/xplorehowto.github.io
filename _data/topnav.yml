@@ -1,0 +1,36 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: Explore AI
+      external_url: https://gcloudex.github.io/
+#    - title: News
+#      url: /news
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Topics
+      folderitems:
+        - title: AI
+          url: /ai
+        - title: Cloud
+          url: /cloud
+        - title: AWS
+          url: /aws
+        - title: GCP
+          url: /gcp
+#    - title: Tags
+#      folderitems:
+#        - title: Tag List
+#          url: /tags
+    - title: Ext. Links
+      folderitems:
+        - title: Jekyll documentation theme
+          external_url: https://idratherbewriting.com/documentation-theme-jekyll/
+        - title: Jekyll documentation
+          external_url: http://jekyllrb.com/docs/home/
+        - title: idratherbewriting blog
+          external_url: http://idratherbewriting.com/

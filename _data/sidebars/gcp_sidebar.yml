@@ -1,0 +1,25 @@
+entries:
+- title: Sidebar
+  product: GCP
+  version:  
+  folders:
+
+  - title: GCP
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /gcp
+      output: web

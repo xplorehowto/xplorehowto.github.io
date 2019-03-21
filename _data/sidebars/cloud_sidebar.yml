@@ -1,0 +1,33 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: Cloud
+  version:  
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+    - title: Introduction
+      url: /cloud
+      output: web
+    - title: References
+      url: /cloud_refs
+      output: web
+#    - title: API Services
+#      url: /cloud_svcs
+#      output: web

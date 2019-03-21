@@ -1,0 +1,28 @@
+entries:
+- title: Sidebar
+  product:  AI & ML
+  version:  
+  folders:
+
+  - title: AI
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /ai
+      output: web
+    - title: References
+      url: /ai_refs
+      output: web
