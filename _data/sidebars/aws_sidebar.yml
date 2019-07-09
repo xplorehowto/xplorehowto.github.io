@@ -50,7 +50,7 @@ entries:
       url: /aws_tbd
       output: web
 
-  - title: SIC
+  - title: Security-Identity-Compl.
     output: web
     folderitems:
     - title: IAM
