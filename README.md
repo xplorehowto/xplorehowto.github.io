@@ -6,9 +6,13 @@ Powered by: [Jekyll](https://jekyllrb.com/) static site-generator
 
 ## Setup development environment
 
-See [Jekyll Quickstart](https://jekyllrb.com/docs/).
+- See [Jekyll Quickstart](https://jekyllrb.com/docs/).
 
-### Adding contents
+- [Template documentation](https://idratherbewriting.com/documentation-theme-jekyll/index.html)
+
+## Adding contents
+
+### Setup
 
 - Clone this repo to laptop
 - Edit the content in `pages` folder
@@ -18,6 +22,14 @@ See [Jekyll Quickstart](https://jekyllrb.com/docs/).
 bundle exec jekyll serve
 ```
 - Next, browse to http://localhost:4000
+
+## Add New Page
+
+Add new page to the `pages` folder, organized by the topics.
+ 
+## Manage Sidebar 
+
+See `_data/sidebars` folder and `_config.yml`.
 
 
 ### Jekyll debugging

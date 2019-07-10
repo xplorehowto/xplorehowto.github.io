@@ -28,7 +28,7 @@ topnav_dropdowns:
 #          url: /tags
     - title: Ext. Links
       folderitems:
-        - title: Jekyll documentation theme
+        - title: Jekyll template documentation
           external_url: https://idratherbewriting.com/documentation-theme-jekyll/
         - title: Jekyll documentation
           external_url: http://jekyllrb.com/docs/home/

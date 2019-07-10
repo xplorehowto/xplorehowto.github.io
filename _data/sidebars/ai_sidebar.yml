@@ -26,3 +26,10 @@ entries:
     - title: References
       url: /ai_refs
       output: web
+
+  - title: Machine Learning
+    output: web
+    folderitems:
+    - title: Summary
+      url: /ai_ml
+      output: web
