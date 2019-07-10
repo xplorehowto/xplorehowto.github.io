@@ -116,11 +116,11 @@ Follow the instructions below to navigate object detection repo:
 The inference speed is governed by image size, model, hardware and 
 framework but perhaps to a lesser extend.
 
-### Hardware benchmark
+### Hardwares benchmark & Framework (Tensorflow vs TF-lite) benchmark
 
-Alasdair Allan performed benchmarking for the following hardwares while keeping
-the model and framework the same around 
-[May 2019](https://medium.com/@aallan/benchmarking-edge-computing-ce3f13942245):
+Alasdair Allan performed benchmarking for the following hardwares and 
+published the results on the must-read article, 
+[Benchmarking Edge Computing, May 2019](https://medium.com/@aallan/benchmarking-edge-computing-ce3f13942245):
 
 - **Coral Dev Board** (NXP i.MX 8M processor, Google Edge TPU, 
   [Setup](https://medium.com/@aallan/hands-on-with-the-coral-dev-board-adbcc317b6af),
@@ -133,13 +133,17 @@ the model and framework the same around
 - **Coral USB Accelerator with a Raspberry Pi** (
   [Setup](https://medium.com/@aallan/hands-on-with-the-coral-usb-accelerator-a37fcb323553)
   [Specs](https://coral.withgoogle.com/docs/))
-- **The original Movidus Neural Compute Stick with a Raspberry Pi** () 
-- **Second generation Intel Neural Compute Stick 2 with a Raspberry Pi** ()
+- **The original Movidus Neural Compute Stick with a Raspberry Pi** (
+  [Setup](https://blog.hackster.io/getting-started-with-the-intel-neural-compute-stick-2-and-the-raspberry-pi-6904ccfe963),
+  [Original article](https://blog.hackster.io/deep-learning-on-a-usb-stick-29c117cf93e2)) 
+- **Second generation Intel Neural Compute Stick 2 with a Raspberry Pi** (
+  [Setup](https://blog.hackster.io/getting-started-with-the-intel-neural-compute-stick-2-and-the-raspberry-pi-6904ccfe963))
 - **Apple MacBook Pro 2016 model** [Quad-core 2.9 GHz Intel Core i7]
 - **Vanilla Raspberry Pi 3, Model B+** without any acceleration
 
-He compared two quite similar models pretrained by Google, both models use
-Tensorflow framework: 
+The setup was to keep the model and framework the same as much as possible for 
+each hardware. He compared two quite similar models pretrained by Google, 
+both models use Tensorflow framework: 
 [Mobilenet v2 SSD trained with COCO dataset](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_coco_2018_03_29.tar.gz) 
 and 
 [Mobilenet v1 SSD 0.75 depth trained also with COCO dataset](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_0.75_depth_300x300_coco14_sync_2018_07_03.tar.gz).
@@ -149,19 +153,26 @@ objects, a banana and an apple. The image was resized down to 300×300 pixels
 before presenting it to the model, and each model was run 10,000 times before 
 an average inferencing time was taken.
 
+A companion article that compares Tensorflow and Tensorflow-Lite on 
+Raspberry Pi was published later following the hardware benchmarking, 
+[Benchmarking TensorFlow and TensorFlow Lite on the Raspberry Pi](https://blog.hackster.io/benchmarking-tensorflow-and-tensorflow-lite-on-the-raspberry-pi-43f51b796796).
+The combined results are presented here.
+
 {% include image.html file="ai/aa_hw_benchmark_2019-05.png" url="#" 
   caption="Hardware benchmarking: inference time in ms; Source: 
-  <a href='https://medium.com/@aallan/benchmarking-edge-computing-ce3f13942245'>
-  Benchmarking Edge Computing
+  <a href='https://blog.hackster.io/benchmarking-tensorflow-and-tensorflow-lite-on-the-raspberry-pi-43f51b796796'>
+  Benchmarking TensorFlow and TensorFlow Lite on the Raspberry Pi
   </a>" 
   max-width=900 %}
 
 {% include image.html file="ai/aa_hw_benchmark_table_2019-05.png" url="#" 
-  caption="Hardware benchmarking: inference time in ms; Source: 
+  caption="Hardware benchmarking: inference time in ms; Sources: 
   <a href='https://medium.com/@aallan/benchmarking-edge-computing-ce3f13942245'>
   Benchmarking Edge Computing
+  </a> & <a href='https://blog.hackster.io/benchmarking-tensorflow-and-tensorflow-lite-on-the-raspberry-pi-43f51b796796'>
+  Benchmarking TensorFlow and TensorFlow Lite on the Raspberry Pi
   </a>" 
-  max-width=700 %}
+  max-width=900 %}
 
 The inference time [reported by Google](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md#coco-trained-models)
 is 31 ms and 26 ms, respectively, tested under the following conditions: 
