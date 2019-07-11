@@ -21,7 +21,7 @@ Machine Learning (ML) use cases can be categorized into:
 
 ## Models Repository
 
-### Tensorflow Models
+### Tensorflow - Models Zoo
 
 Hosted at the [Github- TensorFlow Models](https://github.com/tensorflow/models)  
 is recommended **START from here for learning**. The repository is grouped by: 
@@ -109,6 +109,23 @@ Follow the instructions below to navigate object detection repo:
 - **[Tensorflow detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)** 
   list all the different models, and provide links to download the models;
   this is where everyone download the models from.
+
+### Coral - Repo
+
+URL: https://coral.withgoogle.com/models/
+
+This repo hosts the pretrained so-called "Edge-TPU" models, `.tflite` file, 
+that is pre-compiled to run on the Edge TPU like Coral board.
+To build your own model for the Edge TPU, you must use the provided
+[Edge TPU Compiler](https://coral.withgoogle.com/docs/edgetpu/compiler/).
+
+List of models include:
+- **Image classification:** MobileNet v1 & v2 (trained on ImageNet), MobileNet v2 
+  (trained on iNat: insect, plants, and birds), and Inception v1 to v4 (trained 
+  on ImageNet)
+- **Object detection:** MobileNet SSD v1 (trained on COCO), and MobileNet SSD v1
+ (trained on Faces)
+- Embedding extractor (classification) - MobileNet v1
 
 
 ## Inference Speed Benchmark
