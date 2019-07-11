@@ -24,6 +24,10 @@ folder: ai
   software engineers with no machine learning or statistics background but  
   begin development using deep learning for product or platform. 
 
+- **[Div into Deep Learning](http://www.d2l.ai/index.html){:target="_blank"}**
+  Online; Open Source; by Zhang et. al.
+  Looks good but have not reviewed;
+  
 ## Convolutional Neural Network
 
 - **Stanford CS231n - Convolutional Neural Networks for Visual Recognition**  
