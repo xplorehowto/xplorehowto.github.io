@@ -8,7 +8,7 @@ permalink: /ai
 folder: ai
 ---
 
-## Overview
+## Introduction
 
 ### What computer sees
 

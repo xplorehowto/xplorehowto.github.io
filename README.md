@@ -25,11 +25,32 @@ bundle exec jekyll serve
 
 ## Add New Page
 
-Add new page to the `pages` folder, organized by the topics.
+- Add new page to the `pages` folder, organized by the topics
+- Prepare the front matter, for example
+  - Tags should be one word, or use underscore; add a new tag to the 
+    `_data/tags_doc.yml` to allow entrance into the page
+  - Permalink reflects filename
+```
+---
+title: Software Coding
+keywords: software, development, coding
+tags: [software_development, coding]
+sidebar: coding_sidebar
+permalink: /coding
+folder: coding
+---
+```
  
 ## Manage Sidebar 
 
 See `_data/sidebars` folder and `_config.yml`.
+
+## Add New Folder
+
+- Create new folder under `pages`
+- Add New Page, see instructions above
+- Add Topic entry in the top navigation, `_data/topnav.yml`
+- Add Topic entry in the home sidebar, `_data/home_sidebar.yml`
 
 
 ### Jekyll debugging

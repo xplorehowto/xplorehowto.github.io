@@ -1,10 +1,12 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
 entries:
 - title: Sidebar
-  product:  AI & ML
+  product: Coding
   version:  
   folders:
 
-  - title: Overview
+  - title:
     output: pdf
     type: frontmatter
     folderitems:
@@ -18,18 +20,20 @@ entries:
       type: frontmatter
 
   - title: Overview
-    output: web
+    output: web, pdf
     folderitems:
     - title: Introduction
-      url: /ai
+      url: /coding
       output: web
     - title: References
-      url: /ai_refs
+      url: /coding_refs
       output: web
-
-  - title: Machine Learning
-    output: web
+#    - title: API Services
+#      url: /cloud_svcs
+#      output: web
+  - title: Coding Language
+    output: web, pdf
     folderitems:
-    - title: Summary
-      url: /ai_ml
+    - title: Python
+      url: /coding_python
       output: web

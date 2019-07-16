@@ -1,10 +1,12 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
 entries:
 - title: Sidebar
-  product:  AI & ML
+  product: Edge
   version:  
   folders:
 
-  - title: Overview
+  - title:
     output: pdf
     type: frontmatter
     folderitems:
@@ -18,18 +20,14 @@ entries:
       type: frontmatter
 
   - title: Overview
-    output: web
+    output: web, pdf
     folderitems:
     - title: Introduction
-      url: /ai
+      url: /edge
       output: web
     - title: References
-      url: /ai_refs
+      url: /edge_refs
       output: web
-
-  - title: Machine Learning
-    output: web
-    folderitems:
-    - title: Summary
-      url: /ai_ml
-      output: web
+#    - title: API Services
+#      url: /cloud_svcs
+#      output: web

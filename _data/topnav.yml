@@ -18,10 +18,14 @@ topnav_dropdowns:
           url: /ai
         - title: Cloud
           url: /cloud
-        - title: AWS
+        - title: Cloud - AWS
           url: /aws
-        - title: GCP
+        - title: Cloud - GCP
           url: /gcp
+        - title: Coding
+          url: /coding
+        - title: Edge Computing
+          url: /edge
 #    - title: Tags
 #      folderitems:
 #        - title: Tag List
