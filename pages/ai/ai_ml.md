@@ -127,6 +127,12 @@ List of models include:
  (trained on Faces)
 - Embedding extractor (classification) - MobileNet v1
 
+### AWSLab Model zoo
+
+URL: https://github.com/awslabs/mxnet-model-server/blob/master/docs/model_zoo.md
+
+
+
 ### Apache MXNet Model Zoo
 
 URLs: 
@@ -151,6 +157,7 @@ Gluon Model zoo has models in the following architectures:
 - MobileNetV2
 
 Also see the companion **[tutorial](https://mxnet.incubator.apache.org/versions/master/tutorials/python/predict_image.html)**
+
 
 ## Inference Speed Benchmark
 
