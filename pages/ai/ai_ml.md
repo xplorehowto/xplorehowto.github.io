@@ -127,6 +127,30 @@ List of models include:
  (trained on Faces)
 - Embedding extractor (classification) - MobileNet v1
 
+### Apache MXNet Model Zoo
+
+URLs: 
+- MXNet Model zoo - https://mxnet.apache.org/model_zoo/index.html
+- MXNet Gluon Model zoo - https://mxnet.incubator.apache.org/api/python/gluon/model_zoo.html 
+
+MXNet Model zoo has models in the following categories:
+- CNN
+- RNN
+- GAN
+- Other models
+
+Gluon Model zoo has models in the following architectures: 
+- AlexNet 
+- DenseNet 
+- Inception V3 
+- ResNet V1 
+- ResNet V2 
+- SqueezeNet 
+- VGG 
+- MobileNet 
+- MobileNetV2
+
+Also see the companion **[tutorial](https://mxnet.incubator.apache.org/versions/master/tutorials/python/predict_image.html)**
 
 ## Inference Speed Benchmark
 
@@ -221,6 +245,96 @@ Two very good sources, directly from Tensorfow, to start from:
 - [Tensorflow website](https://www.tensorflow.org/install)
   more detailed instructions; including; docker container, and Google Colab. 
 
+
+
+## Dataset
+
+### ImageNet
+
+URL: http://www.image-net.org/
+
+Image database hosted by Stanford Vision Lab; the images are organized 
+according to the Princenton University [WordNet](https://wordnet.princeton.edu/)
+hierarchy (currently only the nouns), in which each node of the hierarchy is 
+depicted by hundreds and thousands of images.
+
+Total images: 14,197,122 images, 21841 synsets indexed
+Categories: 1000
+Resolutions, pixels:
+Image types: natural
+
+### CIFAR10
+
+URL: https://www.cs.toronto.edu/~kriz/cifar.html
+
+Total images: 60,000
+Categories: 10
+Resolutions, pixels: 32 x 32
+Image types: natural
+
+### PASCAL_VOC
+
+URL: http://host.robots.ox.ac.uk/pascal/VOC/
+
+Subset of ImageNet images with object bounding boxes.
+
+Total images: 1 million+
+Categories: 1000
+Resolutions, pixels: 
+Image types: natural
+
+### UCF101
+
+URL: http://crcv.ucf.edu/data/UCF101.php
+
+Videos database.
+
+Total videos: 13,320
+Categories: 101 action categories
+Resolutions, pixels: 
+Image types: action
+
+### Places2
+
+URL: http://places2.csail.mit.edu/download.html
+
+There are 1.6 million train images from 365 scene categories in the 
+Places365-Standard, which are used to train the Places365 CNNs. 
+There are 50 images per category in the validation set and 900 images 
+per category in the testing set. Compared to the train set of 
+Places365-Standard, the train set of Places365-Challenge has 6.2 million 
+extra images, leading to totally 8 million train images for the Places365 
+challenge 2016. The validation set and testing set are the same as 
+the Places365-Standard.
+
+Total images: 1.6 millions
+Categories: 365 scenes
+Resolutions, pixels: 
+Image types: places
+
+### Mini-Places
+
+URL: http://6.869.csail.mit.edu/fa15/project.html
+
+Subset of the Places2 dataset.
+
+Total images: 100,000
+Categories: 100 scenes
+Resolutions, pixels: 
+Image types: places
+
+### Multi-media commonly
+
+URL: https://aws.amazon.com/public-datasets/multimedia-commons/
+
+Images and videos from flickr. YFCC100M and supplementyal material 
+(pre-extracted features, additional annotations).
+
+Total images: 99.2 millions
+Total videos: 0.8 million
+Categories: 100 scenes
+Resolutions, pixels: 
+Image types: natural
 
 ## References
 
