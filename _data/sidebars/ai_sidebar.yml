@@ -33,3 +33,6 @@ entries:
     - title: Summary
       url: /ai_ml
       output: web
+    - title: Tensorflow
+      url: /ai_tf
+      output: web

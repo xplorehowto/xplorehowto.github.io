@@ -28,7 +28,7 @@ bundle exec jekyll serve
 - Add new page to the `pages` folder, organized by the topics
 - Prepare the front matter, for example
   - Tags should be one word, or use underscore; add a new tag to the 
-    `_data/tags_doc.yml` to allow entrance into the page
+    `_data/tags.yml` to allow entrance into the page
   - Permalink reflects filename
 ```
 ---
