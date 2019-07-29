@@ -34,3 +34,8 @@ folder: ai
   [Notes](http://cs231n.github.io/){:target="_blank"}; 
   [Lecture Collection Youtube](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv){:target="_blank"}
 
+## Frameworks
+
+- **[Gluon MXNet - Deep Learning - The Straight Dope](https://gluon.mxnet.io/index.html?source=post_page---------------------------){:target="_blank"}**
+  Online; Open Source; by Gluon MXNet
+  Looks good with very wide topic coverage;

@@ -159,6 +159,16 @@ Gluon Model zoo has models in the following architectures:
 Also see the companion **[tutorial](https://mxnet.incubator.apache.org/versions/master/tutorials/python/predict_image.html)**
 
 
+## Tutorials
+
+- MXNet
+  - [Predict Image](https://mxnet.incubator.apache.org/versions/master/tutorials/python/predict_image.html)
+
+  - [Gluon CV Toolkit](https://github.com/dmlc/gluon-cv?source=post_page---------------------------)
+    MXNet models; extensive tutorial in: image classification, object detection, 
+    semantic segmentation, instance segmentation, pose estimation, GAN, 
+    and person re-id;
+
 ## Inference Speed Benchmark
 
 The inference speed is governed by image size, model, hardware and 
