@@ -27,6 +27,14 @@ folder: ai
 - **[Dive into Deep Learning](http://www.d2l.ai/index.html){:target="_blank"}**
   Online; Open Source; by Zhang et. al.
   Looks good but have not reviewed;
+
+- **Courses by Andrew Ng:**
+  - **[AI for Everyone](https://www.coursera.org/learn/ai-for-everyone){:target="_blank"}; Coursera**
+    non-technical
+  
+  - **[Computer Vision](https://www.youtube.com/watch?v=ArPaAX_PhIs&t=57s&index=15&list=PLKZESXvDJD3RepD4cxax2ohUFcwMtNZU2){:target="_blank"};**
+    lecture series;
+  
   
 ## Convolutional Neural Network
 
@@ -34,8 +42,15 @@ folder: ai
   [Notes](http://cs231n.github.io/){:target="_blank"}; 
   [Lecture Collection Youtube](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv){:target="_blank"}
 
+
 ## Frameworks
 
 - **[Gluon MXNet - Deep Learning - The Straight Dope](https://gluon.mxnet.io/index.html?source=post_page---------------------------){:target="_blank"}**
   Online; Open Source; by Gluon MXNet
   Looks good with very wide topic coverage;
+  
+
+## Blogs
+
+- **[Classifying fruits with a Convolutional Neural Network in Keras](https://www.danielpradilla.info/blog/author/danielpradilla/){:target="_blank"};**
+  Daniel Pradilla; very thorough discussion about CNN and object recognition;

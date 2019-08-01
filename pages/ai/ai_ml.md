@@ -217,14 +217,14 @@ Raspberry Pi was published later following the hardware benchmarking,
 The combined results are presented here.
 
 {% include image.html file="ai/aa_hw_benchmark_2019-05.png" url="#" 
-  caption="Hardware benchmarking: inference time in ms; Source: 
+  caption="Hardware benchmarking: inference time in ms; <br/>Source: 
   <a href='https://blog.hackster.io/benchmarking-tensorflow-and-tensorflow-lite-on-the-raspberry-pi-43f51b796796'>
   Benchmarking TensorFlow and TensorFlow Lite on the Raspberry Pi
   </a>" 
   max-width=900 %}
 
 {% include image.html file="ai/aa_hw_benchmark_table_2019-05.png" url="#" 
-  caption="Hardware benchmarking: inference time in ms; Sources: 
+  caption="Hardware benchmarking: inference time in ms; <br/>Sources: 
   <a href='https://medium.com/@aallan/benchmarking-edge-computing-ce3f13942245'>
   Benchmarking Edge Computing
   </a> & <a href='https://blog.hackster.io/benchmarking-tensorflow-and-tensorflow-lite-on-the-raspberry-pi-43f51b796796'>
@@ -352,6 +352,11 @@ Total videos: 0.8 million
 Categories: 100 scenes
 Resolutions, pixels: 
 Image types: natural
+
+### Visipedia on Github
+
+URL: https://github.com/visipedia
+
 
 ## References
 

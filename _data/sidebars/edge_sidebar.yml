@@ -2,7 +2,7 @@
 
 entries:
 - title: Sidebar
-  product: Edge
+  product: Edge Computing
   version:  
   folders:
 
@@ -27,6 +27,16 @@ entries:
       output: web
     - title: References
       url: /edge_refs
+      output: web
+
+  - title: Embedded System
+    output: web, pdf
+    folderitems:
+    - title: Introduction
+      url: /edge_embed
+      output: web
+    - title: Development Board
+      url: /edge_embed_dev
       output: web
 #    - title: API Services
 #      url: /cloud_svcs
