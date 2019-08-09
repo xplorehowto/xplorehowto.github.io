@@ -136,8 +136,8 @@ URL: https://github.com/awslabs/mxnet-model-server/blob/master/docs/model_zoo.md
 ### Apache MXNet Model Zoo
 
 URLs: 
-- MXNet Model zoo - https://mxnet.apache.org/model_zoo/index.html
-- MXNet Gluon Model zoo - https://mxnet.incubator.apache.org/api/python/gluon/model_zoo.html 
+- [MXNet Model zoo](https://mxnet.apache.org/model_zoo/index.html)
+- [MXNet Gluon Model zoo](https://mxnet.incubator.apache.org/api/python/gluon/model_zoo.html)
 
 MXNet Model zoo has models in the following categories:
 - CNN
@@ -169,7 +169,8 @@ Also see the companion **[tutorial](https://mxnet.incubator.apache.org/versions/
     semantic segmentation, instance segmentation, pose estimation, GAN, 
     and person re-id;
 
-## Inference Speed Benchmark
+
+## Benchmark - Inference Speed
 
 The inference speed is governed by image size, model, hardware and 
 framework but perhaps to a lesser extend.
@@ -268,7 +269,7 @@ Two very good sources, directly from Tensorfow, to start from:
 
 ### ImageNet
 
-URL: http://www.image-net.org/
+URL: [http://www.image-net.org/](http://www.image-net.org/)
 
 Image database hosted by Stanford Vision Lab; the images are organized 
 according to the Princenton University [WordNet](https://wordnet.princeton.edu/)
@@ -288,6 +289,23 @@ Total images: 60,000
 Categories: 10
 Resolutions, pixels: 32 x 32
 Image types: natural
+
+### COCO
+
+URL: [http://cocodataset.org/#explore](http://cocodataset.org/#explore)
+
+Total images: 123,287 images, 886,284 instances  
+Categories: 90  
+Resolutions, pixels: *tbd*  
+Image types: common objects; see below  
+
+{% include image.html file="ai/coco.jpg" url="#" 
+  caption="COCO dataset <br/>Source: 
+  <a href='http://cocodataset.org/#explore'>
+  COCO dataset
+  </a>" 
+  max-width=700 %}
+
 
 ### PASCAL_VOC
 
@@ -357,7 +375,142 @@ Image types: natural
 
 URL: https://github.com/visipedia
 
+###  Kitti dataset
 
-## References
+URL: [http://www.cvlibs.net/datasets/kitti/index.php](http://www.cvlibs.net/datasets/kitti/index.php)
 
-- [Google Python Style Guide](https://github.com/google/styleguide/blob/gh-pages/pyguide.md)
+A project of Karlsruhe Institute of Technology and Toyota Technological 
+Institute at Chicago. Images & videos: stereo, optical flow, visual odometry, 
+3D object detection and 3D tracking; taken from a standard station wagon with 
+two high-resolution color and grayscale video cameras. Accurate ground truth is 
+provided by a Velodyne laser scanner and a GPS localization system. 
+The datasets are captured by driving around the mid-size city of Karlsruhe, 
+in rural areas and on highways. Up to 15 cars and 30 pedestrians are visible 
+per image. Besides providing all data in raw format, benchmarks were extracted 
+for each task; and for each of our benchmarks, also provide an evaluation 
+metric and this evaluation website.
+
+Total images: *tbd*
+Total videos:  *tbd*
+Categories:  *tbd*
+Resolutions, pixels:  *tbd* 
+Image types:  *tbd*
+
+### Open Image dataset
+
+URL: [https://storage.googleapis.com/openimages/web/index.html](https://storage.googleapis.com/openimages/web/index.html)
+
+Total images: *tbd*
+Total videos:  *tbd*
+Categories:  *tbd*
+Resolutions, pixels:  *tbd* 
+Image types:  *tbd*
+
+15,851,536 boxes on 600 categories
+
+2,785,498 instance segmentations on 350 categories
+
+36,464,560 image-level labels on 19,959 categories
+
+391,073 relationship annotations of 329 relationships
+
+Extension - 478,000 crowdsourced images with 6,000+ categories
+
+
+### AVA dataset
+
+URL: [https://research.google.com/ava/](https://research.google.com/ava/)
+
+Audiovisual annotations of video for improving our understanding of human 
+activity. The annotated videos are all 15 minute long movie clips. Each of the 
+clips has been exhaustively labeled by human annotators, and the use of movie 
+clips in the dataset is expected to enable a richer variety of recording 
+conditions and representations of human activity.
+
+Total images: *tbd*
+Total videos:  *tbd*
+Categories:  *tbd*
+Resolutions, pixels:  *tbd* 
+Image types:  *tbd*  
+
+{% include image.html file="ai/ava.jpg" url="#" 
+  caption="AVA dataset <br/>Source: 
+  <a href='https://research.google.com/ava/explore.html'>
+  AVA dataset
+  </a>" 
+  max-width=700 %}
+
+
+### iNaturalist dataset
+
+URL: [https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes)
+
+For the training set, the distribution of images per category follows the 
+observation frequency of that category by the iNaturalist community. Therefore, 
+there is a non-uniform distribution of images per category.
+
+Total images: 579,184 training images and 95,986 validation images  
+Total videos:  *tbd*
+Categories:  5,089  
+Resolutions, pixels:  *tbd* 
+Image types:  *tbd*
+
+
+### CIFAR-10 dataset
+
+URL: [http://www.cs.toronto.edu/~kriz/cifar.html](http://www.cs.toronto.edu/~kriz/cifar.html)
+
+Total images: 60000  
+Total videos:  none
+Categories:  10 
+Resolutions, pixels: 32x32 colour images 
+Image types:  airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+
+
+## Training
+
+### Image sources
+
+Check the license thoroughly before using:
+
+- [Google Image](https://images.google.com/)
+
+- [Pixabay](https://pixabay.com/)
+  some images are free;
+
+
+### Image Annotation Tools
+
+- [labelImg](https://github.com/tzutalin/labelImg)
+  written in Python and uses Qt for its graphical interface; 
+  the annotations are saved as XML files in the PASCAL VOC format.
+  May have problems opening `jpg` on MAC OSX, if so convert to `png`;
+
+- [FIAT](https://github.com/christopher5106/FastAnnotationTool)
+  Fast Image Annotation Tool; handle image data annotation, data augmentation, 
+  data extraction, and result visualisation/validation. 
+  Requires OPENCV 3 and Google Protobuf.
+
+### Image format conversion Tools
+
+- [ImageMagick](https://imagemagick.org/#)
+  create, edit, compose, or convert bitmap images. It can read and write images
+  in a variety of formats (over 200) including PNG, JPEG, GIF, HEIC, TIFF, DPX,
+  EXR, WebP, Postscript, PDF, and SVG. Use ImageMagick to resize, flip, mirror, 
+  rotate, distort, shear and transform images, adjust image colors, apply 
+  various special effects, or draw text, lines, polygons, ellipses and 
+  Bézier curves.
+
+### Data Labeling service
+
+- [Figure-Eight](https://www.figure-eight.com/)
+
+- [CrowdAI](https://crowdai.com/)
+
+- [Amazon Mechanical Turk](https://www.mturk.com/)
+
+
+
+## Tools
+
+- [Colaboratory - Google interactive python notebook](https://colab.research.google.com){:target="_blank"}

@@ -21,4 +21,4 @@ retraining for further model refinements.
 
 - [Colaboratory - Google interactive python notebook](https://colab.research.google.com){:target="_blank"}
 
-- [Tensorflow Suite of Tools](https://www.tensorflow.org/resources/tools)
+- [Tensorflow Suite of Tools](https://www.tensorflow.org/resources/tools){:target="_blank"}
