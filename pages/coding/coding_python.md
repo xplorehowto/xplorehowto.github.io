@@ -69,7 +69,36 @@ cd <home_directory>/tfserving_project
 pip3 install -r requirements.txt
 ```
 
+## Jupyter
+
+- [Jupyter](https://jupyter.org/index.html){:target="_blank"}
+- [Jupyter Doc](https://jupyter.org/documentation){:target="_blank"}
+- [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/){:target="_blank"}
+- [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/index.html){:target="_blank"}
+
+Notebook:
+```
+jupyter notebook
+```
+
+JupterLab:
+```
+jupyter lab
+```
+
+### JupyterHub
+
+- [JupyterHub Github](https://github.com/jupyterhub){:target="_blank"}
+
 
 ## Online IDE
 
-- [Repl.it](https://repl.it)
+- [Repl.it](https://repl.it){:target="_blank"}
+
+- [Python Fidde](http://pythonfiddle.com/)
+
+- [Trinket](https://trinket.io/)
+
+- [Python.org console](https://www.python.org/shell/)
+
+- [Colaboratory - Google interactive python notebook](https://colab.research.google.com){:target="_blank"}
