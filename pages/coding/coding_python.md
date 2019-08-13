@@ -9,7 +9,73 @@ folder: coding
 
 ## Introduction
 
-Latest Python version 3.14.
+Latest Python version `3.7.4`.
+Ubuntu `18.04` comes with pre-installed Python `3.6.5`.
+
+**NOTE:** upgrading Python on Ubuntu requires build from source. 
+
+### References:
+
+- [Real Python](https://realpython.com/){:target="_blank"}  
+  Excellent Python tutorial website;
+
+
+## Python "modules" and "packages"
+
+Python provides two constructs to facilitate [modular programming](https://en.wikipedia.org/wiki/Modular_programming): 
+modules and packages.
+- module is the most basic method; module can be built-in, or written in Python,
+  or C. A "python" file (i.e., contains python codes and has `py` filename 
+  extension is a module
+- package is a grouping of modules in a folder such that it can be referenced
+  using dot notation to avoid module names collision.  
+
+Python package is distributed in the form of archived file (`.whl`). 
+The wheel file is uploaded to repository, [Python Package Index](https://pypi.org/)
+and other indexes, to share with others.
+  
+`pip` is the recommended "package installer" for python.
+
+### Install `pip`
+
+```
+apt install python3-pip
+```
+
+Use pip to install packages from the [Python Package Index](https://pypi.org/)
+and other indexes. Additional setup is needed to pull from other indexes 
+(i.e., package repository) as discussed below.
+
+### Setup additional package repository
+
+The setup file is `pip.conf`, or `pip.ini` for Windows; that can be found in
+one or more locations due to: platform variations, or scope (i.e., site-wide,
+per-user, etc.)
+
+For Ubuntu, the file does not exist by default; can be added to `/etc/pip.conf`:  
+```
+[global]
+timeout = 60
+index-url = https://download.zope.org/ppix
+```
+
+For Raspbian, the default setup, `/etc/pip.conf`, points to an extra repo:
+```
+[global]
+extra-index-url=https://www.piwheels.org/simple
+```
+
+For detailed, refer to [Pip User Guide](https://pip.pypa.io/en/stable/user_guide/)
+
+
+### References
+
+- [Python Modules and Packages](https://realpython.com/python-modules-packages/){:target="_blank"}
+
+- [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/#uploading-your-project-to-pypi){:target="_blank"}
+
+- [Pip User Guide](https://pip.pypa.io/en/stable/user_guide/){:target="_blank"}
+
 
 ## Setup `virtualenv` & `virtualenvwrapper`
 
@@ -22,11 +88,6 @@ environments.
 wrappers for creating and deleting virtual environments, managing development 
 workflow, making it easier to work on more than one project at a time without 
 introducing conflicts in their dependencies.
-
-### Reference 
-
-- [Python Guide - virtualenvs](https://docs.python-guide.org/dev/virtualenvs/)
-- [Doc - virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/install.html)
 
 ### Installation
 
@@ -62,12 +123,24 @@ workon tfserving
 ```
 
 If the project has a preset package requirements specified in the
-`requirements.txt` file, then proceed to install:
+`requirements.txt` file, then proceed to install. For example,
 
 ``` 
 cd <home_directory>/tfserving_project
 pip3 install -r requirements.txt
 ```
+
+Exit from the virtual environment:
+```
+deactivate
+```
+
+### Reference 
+
+- [Python Guide - virtualenvs](https://docs.python-guide.org/dev/virtualenvs/){:target="_blank"}
+
+- [Doc - virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/install.html){:target="_blank"}
+
 
 ## Jupyter
 
