@@ -45,6 +45,15 @@ apt install python3-pip
 Use pip to install packages from the [Python Package Index](https://pypi.org/)
 and other indexes. Additional setup is needed to pull from other indexes 
 (i.e., package repository) as discussed below.
+  
+  
+[ALTERNATIVE] - Download and Install
+```
+# Download and install pip
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+```
+
 
 ### Setup additional package repository
 
@@ -130,9 +139,16 @@ cd <home_directory>/tfserving_project
 pip3 install -r requirements.txt
 ```
 
-Exit from the virtual environment:
+### Exit from the virtual environment
+
 ```
 deactivate
+```
+
+### Delete virtual environment
+
+```
+rmvirtualenv <ve_name>
 ```
 
 ### Reference 

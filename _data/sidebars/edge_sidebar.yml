@@ -29,6 +29,13 @@ entries:
       url: /edge_refs
       output: web
 
+  - title: Raspberry Pi
+    output: web, pdf
+    folderitems:
+    - title: Tips & Tricks
+      url: /edge_rpi
+      output: web
+
   - title: Embedded System
     output: web, pdf
     folderitems:
