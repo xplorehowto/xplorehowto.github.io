@@ -54,7 +54,6 @@ wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 ```
 
-
 ### Setup additional package repository
 
 The setup file is `pip.conf`, or `pip.ini` for Windows; that can be found in
@@ -75,6 +74,16 @@ extra-index-url=https://www.piwheels.org/simple
 ```
 
 For detailed, refer to [Pip User Guide](https://pip.pypa.io/en/stable/user_guide/)
+
+### Useful commands
+
+```
+pip install [package-name]
+pip uninstall [package-name]
+pip search [package-name]
+pip freeze > requirements.txt
+pip install -r requirements.txt
+```
 
 
 ### References
