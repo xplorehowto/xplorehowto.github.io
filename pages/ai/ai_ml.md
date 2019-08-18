@@ -132,7 +132,6 @@ List of models include:
 URL: https://github.com/awslabs/mxnet-model-server/blob/master/docs/model_zoo.md
 
 
-
 ### Apache MXNet Model Zoo
 
 URLs: 
@@ -158,6 +157,21 @@ Gluon Model zoo has models in the following architectures:
 
 Also see the companion **[tutorial](https://mxnet.incubator.apache.org/versions/master/tutorials/python/predict_image.html)**
 
+## OpenVINO Github
+
+URL: https://github.com/opencv/open_model_zoo/blob/master/intel_models/index.md
+
+- Object Detection Models
+- Object Recognition Models
+- Reidentification Models
+- Semantic Segmentation Models
+- Instance Segmentation Models
+- Human Pose Estimation Models
+- Image Processing
+- Text Detection
+- Text Recognition
+- Action Recognition Models
+- Compressed models
 
 ## Tutorials
 
@@ -276,28 +290,28 @@ according to the Princenton University [WordNet](https://wordnet.princeton.edu/)
 hierarchy (currently only the nouns), in which each node of the hierarchy is 
 depicted by hundreds and thousands of images.
 
-Total images: 14,197,122 images, 21841 synsets indexed
-Categories: 1000
-Resolutions, pixels:
-Image types: natural
+- Total images: 14,197,122 images, 21841 synsets indexed
+- Categories: 1000
+- Resolutions, pixels:
+- Image types: natural
 
 ### CIFAR10
 
 URL: https://www.cs.toronto.edu/~kriz/cifar.html
 
-Total images: 60,000
-Categories: 10
-Resolutions, pixels: 32 x 32
-Image types: natural
+- Total images: 60,000
+- Categories: 10
+- Resolutions, pixels: 32 x 32
+- Image types: natural
 
 ### COCO
 
 URL: [http://cocodataset.org/#explore](http://cocodataset.org/#explore)
 
-Total images: 123,287 images, 886,284 instances  
-Categories: 90  
-Resolutions, pixels: *tbd*  
-Image types: common objects; see below  
+- Total images: 123,287 images, 886,284 instances  
+- Categories: 90  
+- Resolutions, pixels: *tbd*  
+- Image types: common objects; see below  
 
 {% include image.html file="ai/coco.jpg" url="#" 
   caption="COCO dataset <br/>Source: 
@@ -313,10 +327,10 @@ URL: http://host.robots.ox.ac.uk/pascal/VOC/
 
 Subset of ImageNet images with object bounding boxes.
 
-Total images: 1 million+
-Categories: 1000
-Resolutions, pixels: 
-Image types: natural
+- Total images: 1 million+
+- Categories: 1000
+- Resolutions, pixels: 
+- Image types: natural
 
 ### UCF101
 
@@ -324,10 +338,11 @@ URL: http://crcv.ucf.edu/data/UCF101.php
 
 Videos database.
 
-Total videos: 13,320
-Categories: 101 action categories
-Resolutions, pixels: 
-Image types: action
+- Total videos: 13,320
+- Categories: 101 action categories
+- Resolutions, pixels: 
+- Image types: action
+
 
 ### Places2
 
@@ -342,10 +357,10 @@ extra images, leading to totally 8 million train images for the Places365
 challenge 2016. The validation set and testing set are the same as 
 the Places365-Standard.
 
-Total images: 1.6 millions
-Categories: 365 scenes
-Resolutions, pixels: 
-Image types: places
+- Total images: 1.6 millions
+- Categories: 365 scenes
+- Resolutions, pixels: 
+- Image types: places
 
 ### Mini-Places
 
@@ -353,10 +368,10 @@ URL: http://6.869.csail.mit.edu/fa15/project.html
 
 Subset of the Places2 dataset.
 
-Total images: 100,000
-Categories: 100 scenes
-Resolutions, pixels: 
-Image types: places
+- Total images: 100,000
+- Categories: 100 scenes
+- Resolutions, pixels: 
+- Image types: places
 
 ### Multi-media commonly
 
@@ -365,11 +380,11 @@ URL: https://aws.amazon.com/public-datasets/multimedia-commons/
 Images and videos from flickr. YFCC100M and supplementyal material 
 (pre-extracted features, additional annotations).
 
-Total images: 99.2 millions
-Total videos: 0.8 million
-Categories: 100 scenes
-Resolutions, pixels: 
-Image types: natural
+- Total images: 99.2 millions
+- Total videos: 0.8 million
+- Categories: 100 scenes
+- Resolutions, pixels: 
+- Image types: natural
 
 ### Visipedia on Github
 
@@ -390,31 +405,31 @@ per image. Besides providing all data in raw format, benchmarks were extracted
 for each task; and for each of our benchmarks, also provide an evaluation 
 metric and this evaluation website.
 
-Total images: *tbd*
-Total videos:  *tbd*
-Categories:  *tbd*
-Resolutions, pixels:  *tbd* 
-Image types:  *tbd*
+- Total images: *tbd*
+- Total videos:  *tbd*
+- Categories:  *tbd*
+- Resolutions, pixels:  *tbd* 
+- Image types:  *tbd*
 
 ### Open Image dataset
 
 URL: [https://storage.googleapis.com/openimages/web/index.html](https://storage.googleapis.com/openimages/web/index.html)
 
-Total images: *tbd*
-Total videos:  *tbd*
-Categories:  *tbd*
-Resolutions, pixels:  *tbd* 
-Image types:  *tbd*
+- Total images: *tbd*
+- Total videos:  *tbd*
+- Categories:  *tbd*
+- Resolutions, pixels:  *tbd* 
+- Image types:  *tbd*
 
-15,851,536 boxes on 600 categories
+- 15,851,536 boxes on 600 categories
 
-2,785,498 instance segmentations on 350 categories
+- 2,785,498 instance segmentations on 350 categories
 
-36,464,560 image-level labels on 19,959 categories
+- 36,464,560 image-level labels on 19,959 categories
 
-391,073 relationship annotations of 329 relationships
+- 391,073 relationship annotations of 329 relationships
 
-Extension - 478,000 crowdsourced images with 6,000+ categories
+- Extension - 478,000 crowdsourced images with 6,000+ categories
 
 
 ### AVA dataset
@@ -427,11 +442,11 @@ clips has been exhaustively labeled by human annotators, and the use of movie
 clips in the dataset is expected to enable a richer variety of recording 
 conditions and representations of human activity.
 
-Total images: *tbd*
-Total videos:  *tbd*
-Categories:  *tbd*
-Resolutions, pixels:  *tbd* 
-Image types:  *tbd*  
+- Total images: *tbd*
+- Total videos:  *tbd*
+- Categories:  *tbd*
+- Resolutions, pixels:  *tbd* 
+- Image types:  *tbd*  
 
 {% include image.html file="ai/ava.jpg" url="#" 
   caption="AVA dataset <br/>Source: 
@@ -449,22 +464,57 @@ For the training set, the distribution of images per category follows the
 observation frequency of that category by the iNaturalist community. Therefore, 
 there is a non-uniform distribution of images per category.
 
-Total images: 579,184 training images and 95,986 validation images  
-Total videos:  *tbd*
-Categories:  5,089  
-Resolutions, pixels:  *tbd* 
-Image types:  *tbd*
+- Total images: 579,184 training images and 95,986 validation images  
+- Total videos:  *tbd*
+- Categories:  5,089  
+- Resolutions, pixels:  *tbd* 
+- Image types:  *tbd*
 
 
 ### CIFAR-10 dataset
 
 URL: [http://www.cs.toronto.edu/~kriz/cifar.html](http://www.cs.toronto.edu/~kriz/cifar.html)
 
-Total images: 60000  
-Total videos:  none
-Categories:  10 
-Resolutions, pixels: 32x32 colour images 
-Image types:  airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+- Total images: 60000  
+- Total videos:  none
+- Categories:  10 
+- Resolutions, pixels: 32x32 colour images 
+- Image types:  airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+
+
+### CALTECH-101
+
+URL: 
+- [http://www.vision.caltech.edu/Image_Datasets/Caltech101/](http://www.vision.caltech.edu/Image_Datasets/Caltech101/)
+- [http://www.robots.ox.ac.uk:5000/~vgg/research/caltech/index.html](http://www.robots.ox.ac.uk:5000/~vgg/research/caltech/index.html)
+
+Pictures of objects belonging to 101 categories. About 40 to 800 images per category. 
+Most categories have about 50 images.
+
+- Total images: 60000  
+- Total videos:  none
+- Categories:  101; 40 to 800 images per category. Most categories have about 50 images.
+- Resolutions, pixels: 300 x 200 colour images 
+- Image types:  various
+
+{% include image.html file="ai/caltech-dataset.png" url="#" 
+  caption="Caltech dataset <br/>Source: 
+  <a href='http://www.robots.ox.ac.uk:5000/~vgg/research/caltech/index.html'>
+  Caltech dataset
+  </a>" 
+  max-width=700 %}
+
+
+### CALTECH-256
+
+URL: [http://www.vision.caltech.edu/Image_Datasets/Caltech256/](http://www.vision.caltech.edu/Image_Datasets/Caltech256/)
+
+- Total images: 30607  
+- Total videos:  none
+- Categories:  256;
+- Resolutions, pixels: ? colour images 
+- Image types:  various
+
 
 
 ## Training

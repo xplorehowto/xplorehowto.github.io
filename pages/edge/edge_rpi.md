@@ -9,9 +9,61 @@ folder: edge
 
 ## Introduction
 
-RaspberryPi...
+Compilation of tips, tricks, troubleshooting issues, etc.
 
-## [Issue] Installing numpy
+
+## Tips & Tricks
+
+### Increase Swap Space
+
+Increasing swap space is commonly done prior to compilation of native code, 
+such as C/C++, to prevent compilation hanging due to out of memory especially 
+in the multi-core complation setup.
+
+- Swap file is defined in `/etc/dphys-swapfile`; edit the `CONF_SWAPSIZE` 
+  variable in ths file:
+```
+# default value
+#CONF_SWAPSIZE=100
+
+# increase to 1024MB or 2048MB, for example
+CONF_SWAPSIZE=1024
+```
+
+- Restart the service
+```
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
+```
+
+- *WARNING:* for RPi running microSD card, increase swap space may result in
+  shorter lifetime of the SD card due to heavy used. 
+  Refer to [How to change Raspbian swapfile size](https://www.bitpi.co/2015/02/11/how-to-change-raspberry-pis-swapfile-size-on-rasbian/) for more details.
+
+- Now ready for multi-core compilation; 
+```
+# running four cores
+make -j4
+
+# running single core
+make
+```
+
+### Backup raspbian SD 
+
+RPI OS runs on microSD card which has a shorter lifetime than, for example, 
+physical hard drive. Therefore, backing up the entire microSD card to a file
+(`.img` file) is highly recommended to prevent failure at the least desired 
+time, like in a middle of critical half-finished project.
+  
+For Windows, use [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
+
+Reference:
+- https://raspberry-projects.com/pi/pi-operating-systems/win32diskimager
+
+## Troubleshooting
+
+### [Issue] Installing numpy
 
 Installation of 
 **Error:**
