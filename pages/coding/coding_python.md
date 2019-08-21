@@ -75,6 +75,13 @@ extra-index-url=https://www.piwheels.org/simple
 
 For detailed, refer to [Pip User Guide](https://pip.pypa.io/en/stable/user_guide/)
 
+### Setup trusted-host
+
+For example,
+```
+pip install --trusted-host pypi.python.org
+```
+
 ### Useful commands
 
 ```
@@ -82,7 +89,8 @@ pip install [package-name]
 pip uninstall [package-name]
 pip search [package-name]
 pip freeze > requirements.txt
-pip install -r requirements.txt
+pip install -r requirements.txt --trusted-host
+
 ```
 
 

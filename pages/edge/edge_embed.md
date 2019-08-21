@@ -17,6 +17,20 @@ designed to perform a specific task.
   <br/>[Source: Software Engineering for Embedded Systems; Ref below;]" 
   max-width=400%}
 
+## Architectures
+
+| Code      | Description                            |
+|-----------|:---------------------------------------|
+| armv5e    | outdated, such as ARM926               |
+| armv6l    | Rpi 0&1                                |
+| armv7hf   | Rpi 2&3; beaglebone                    |
+| aarch64   | Jetson TX2                             |
+| amd64     | Intel NUC                              |
+| i386      | Intel x86, edison                      |
+
+Reference:
+- [Hardware and architectures](https://www.balena.io/docs/reference/base-images/devicetypes/)
+
 ## Build Process
 
 {% include image.html file="edge/embed_buildprocess.jpg" url="#" 
