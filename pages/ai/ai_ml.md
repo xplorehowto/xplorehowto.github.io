@@ -183,6 +183,8 @@ URL: https://github.com/opencv/open_model_zoo/blob/master/intel_models/index.md
     semantic segmentation, instance segmentation, pose estimation, GAN, 
     and person re-id;
 
+- TFLite
+  - [TFLite Models](https://www.tensorflow.org/lite/models/image_classification/overview)
 
 ## Benchmark - Inference Speed
 

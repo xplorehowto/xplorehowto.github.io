@@ -21,8 +21,9 @@ such as C/C++, to prevent compilation hanging due to out of memory especially
 in the multi-core complation setup.
 
 - Swap file is defined in `/etc/dphys-swapfile`; edit the `CONF_SWAPSIZE` 
-  variable in ths file:
-```
+  variable in this file: 
+
+```bash
 # default value
 #CONF_SWAPSIZE=100
 
@@ -31,7 +32,8 @@ CONF_SWAPSIZE=1024
 ```
 
 - Restart the service
-```
+
+```bash
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 ```
@@ -41,7 +43,8 @@ sudo /etc/init.d/dphys-swapfile start
   Refer to [How to change Raspbian swapfile size](https://www.bitpi.co/2015/02/11/how-to-change-raspberry-pis-swapfile-size-on-rasbian/) for more details.
 
 - Now ready for multi-core compilation; 
-```
+
+```bash
 # running four cores
 make -j4
 
@@ -67,7 +70,8 @@ Reference:
 
 Installation of 
 **Error:**
-```
+
+```bash
 sudo apt update
 pip3 install numpy
 python3
@@ -83,7 +87,7 @@ ImportError: libf77blas.so.3: cannot open shared object file: No such file or di
 
 **Resolution:**
 
-```
+```bash
 pip3 uninstall numpy
 sudo apt install libatlas3-base
 sudo pip3 install numpy

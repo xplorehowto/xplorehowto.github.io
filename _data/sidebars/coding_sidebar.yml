@@ -31,9 +31,15 @@ entries:
 #    - title: API Services
 #      url: /cloud_svcs
 #      output: web
-  - title: Coding Language
+  - title: Programming Language
     output: web, pdf
     folderitems:
     - title: Python
       url: /coding_python
+      output: web
+  - title: Technology
+    output: web, pdf
+    folderitems:
+    - title: Docker
+      url: /coding_docker
       output: web
