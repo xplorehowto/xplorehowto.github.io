@@ -64,6 +64,12 @@ For Windows, use [Win32DiskImager](https://sourceforge.net/projects/win32diskima
 Reference:
 - https://raspberry-projects.com/pi/pi-operating-systems/win32diskimager
 
+## Cloud hosting of RPi
+
+Cloud hosting of Raspberry Pi at:
+https://www.mythic-beasts.com/order/rpi
+
+
 ## Troubleshooting
 
 ### [Issue] Installing numpy
