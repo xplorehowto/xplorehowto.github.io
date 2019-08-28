@@ -16,6 +16,19 @@ sudo apt-get update -y
 sudo apt-get dist-upgrade -y
 curl -sSL get.docker.com | sh
 ```
+  Note: if the download fails, as shown below, retry again;
+```
+[...]
++ sudo -E sh -c echo "deb [arch=armhf] https://download.docker.com/linux/raspbian stretch stable" > /etc/apt/sources.list.d/docker.list
++ sudo -E sh -c apt-get update -qq >/dev/null
+W: Failed to fetch http://raspbian.raspberrypi.org/raspbian/dists/stretch/InRelease  Temporary failure resolving 'raspbian.raspberrypi.org'
+W: Failed to fetch https://download.docker.com/linux/raspbian/dists/stretch/InRelease  Could not resolve host: download.docker.com
+W: Failed to fetch http://archive.raspberrypi.org/debian/dists/stretch/InRelease  Temporary failure resolving 'archive.raspberrypi.org'
+W: Some index files failed to download. They have been ignored, or old ones used instead.
++ [ -n  ]
++ sudo -E sh -c apt-get install -y -qq --no-install-recommends docker-ce >/dev/null
+E: Unable to locate package docker-ce
+```
 
 - Post installation
   Docker daemon binds to a Unix socket which is by default owned by root; 
@@ -29,7 +42,7 @@ curl -sSL get.docker.com | sh
 ```bash
 sudo usermod pi -aG docker
 newgrp docker
-sudo reboot
+sudo reboot now
 ```
 
 ### *Manual installation* of Docker on Linux Debian
