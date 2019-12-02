@@ -9,7 +9,30 @@ folder: edge
 
 ## Introduction
 
-Compilation of tips, tricks, troubleshooting issues, etc.
+Website: [raspberrypi.org](https://www.raspberrypi.org/)
+
+### Models
+
+{% include image.html file="edge/rpi_models_tbl.PNG" url="#" 
+    caption="Raspberry Pi Models; 
+    [Source: wikipedia]" 
+    max-width=400%}
+
+
+## Installation Raspbian OS
+
+### Setup
+
+#### Install Touchscreen Keyboard - Matchbox
+
+- Install
+```
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install --no-install-recommends matchbox-keyboard
+```
+
+*Source:* [Matchbox Keyboard - Raspberry Pi Touchscreen Keyboard](https://thepihut.com/blogs/raspberry-pi-tutorials/matchbox-keyboard-raspberry-pi-touchscreen-keyboard)
 
 
 ## Tips & Tricks
