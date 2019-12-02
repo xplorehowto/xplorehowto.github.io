@@ -16,8 +16,16 @@ Website: [raspberrypi.org](https://www.raspberrypi.org/)
 {% include image.html file="edge/rpi_models_tbl.PNG" url="#" 
     caption="Raspberry Pi Models; 
     [Source: wikipedia]" 
-    max-width=400%}
+    max-width=600%}
 
+### Pin Layout & GPIO
+
+{% include image.html file="edge/rpi_pins_gpio.png" url="#" 
+    caption="Raspberry Pi Pins & GPIO; 
+    [Source: raspberrypi.org]" 
+    max-width=600%}
+    
+*Source*: [raspberrypi.org - GPIO](https://www.raspberrypi.org/documentation/usage/gpio/)
 
 ## Installation Raspbian OS
 
@@ -32,7 +40,7 @@ sudo apt-get dist-upgrade
 sudo apt-get install --no-install-recommends matchbox-keyboard
 ```
 
-*Source:* [Matchbox Keyboard - Raspberry Pi Touchscreen Keyboard](https://thepihut.com/blogs/raspberry-pi-tutorials/matchbox-keyboard-raspberry-pi-touchscreen-keyboard)
+*Source*: [Matchbox Keyboard - Raspberry Pi Touchscreen Keyboard](https://thepihut.com/blogs/raspberry-pi-tutorials/matchbox-keyboard-raspberry-pi-touchscreen-keyboard)
 
 
 ## Tips & Tricks
