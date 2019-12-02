@@ -16,7 +16,8 @@ Website: [raspberrypi.org](https://www.raspberrypi.org/)
 {% include image.html file="edge/rpi_models_tbl.PNG" url="#" 
     caption="Raspberry Pi Models; 
     [Source: wikipedia]" 
-    max-width=600%}
+    max-width=800%}
+
 
 ### Pin Layout & GPIO
 
@@ -32,7 +33,7 @@ pinout
 
 - For interactive pinout diagram, go to https://pinout.xyz/
 
-
+  
 In addition to IO, the GPIO pins are used for a variety of functions, such as:
 PWM (pulse-width modulation), SPI, I2C and Serial. See *source* below for 
 details.
@@ -41,9 +42,28 @@ details.
 
 ## Installation Raspbian OS
 
-### Setup
+### Raspbian OS version
 
-#### Install Touchscreen Keyboard - Matchbox
+- Check on device raspbian os version
+```
+uname --all
+```
+Output:
+```
+Linux raspberrypi 4.19.75-v7+ #1270 SMP Tue Sep 24 18:45:11 BST 2019 armv7l GNU/Linux
+```
+Note: 
+- 4.19 corresponds to Debian 10 (Buster); 
+- part of 4.9 & 4.14 corresponds to Debian 9 (Stretch) 
+
+*Source*: [Raspbian](https://en.wikipedia.org/wiki/Raspbian)
+
+## Setup
+
+### Install Touchscreen Keyboard - Matchbox
+
+**Prerequisite**:
+- Raspbian desktop image (not lite)
 
 - Install
 ```
@@ -51,6 +71,8 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get install --no-install-recommends matchbox-keyboard
 ```
+
+- The keyboard can be started from Menu > Accesories > Keyboard
 
 *Source*: [Matchbox Keyboard - Raspberry Pi Touchscreen Keyboard](https://thepihut.com/blogs/raspberry-pi-tutorials/matchbox-keyboard-raspberry-pi-touchscreen-keyboard)
 
