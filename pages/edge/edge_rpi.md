@@ -24,7 +24,19 @@ Website: [raspberrypi.org](https://www.raspberrypi.org/)
     caption="Raspberry Pi Pins & GPIO; 
     [Source: raspberrypi.org]" 
     max-width=600%}
-    
+
+- On raspbian desktop image, the pin layout can be displayed using:
+```
+pinout
+```
+
+- For interactive pinout diagram, go to https://pinout.xyz/
+
+
+In addition to IO, the GPIO pins are used for a variety of functions, such as:
+PWM (pulse-width modulation), SPI, I2C and Serial. See *source* below for 
+details.
+
 *Source*: [raspberrypi.org - GPIO](https://www.raspberrypi.org/documentation/usage/gpio/)
 
 ## Installation Raspbian OS
