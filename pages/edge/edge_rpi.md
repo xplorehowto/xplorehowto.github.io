@@ -22,6 +22,7 @@ Website: [raspberrypi.org](https://www.raspberrypi.org/)
 ```
 cat /sys/firmware/devicetree/base/model
 ```
+
 Output:
 ```
 Raspberry Pi 3 Model B Plus Rev 1.3
@@ -31,6 +32,7 @@ Raspberry Pi 3 Model B Plus Rev 1.3
 ```
 cat /proc/cpuinfo
 ```
+
 Output:
 ```
 processor       : 0
@@ -77,7 +79,6 @@ Hardware        : BCM2835
 Revision        : a020d3
 Serial          : 00000000e5337702
 Model           : Raspberry Pi 3 Model B Plus Rev 1.3
-
 ```
 
 ### Pin Layout & GPIO
@@ -92,6 +93,7 @@ Model           : Raspberry Pi 3 Model B Plus Rev 1.3
 ```
 pinout
 ```
+
 Output:
 ```
 ,--------------------------------.
@@ -194,6 +196,23 @@ Note:
 *Source*: [Raspbian](https://en.wikipedia.org/wiki/Raspbian)
 
 ## Setup
+
+## Change hostname
+
+The hostname should be letters 'a' to 'z' (upper or lower), digits '0' to '9', and 
+the dash '-'.
+  
+Reboot is needed. 
+
+- Change from terminal
+  The `hostname` is in the `/etc/hostname`; the file contains one line only, 
+  the hostname. 
+```
+sudo nano /etc/hostname
+# change the intended hostname
+```
+
+- [Alternative] Change using raspi-config; select “Hostname” from the menu.
 
 ### Increase Swap Space
 
