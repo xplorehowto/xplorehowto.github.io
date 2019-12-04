@@ -90,7 +90,6 @@ Model           : Raspberry Pi 3 Model B Plus Rev 1.3
 
 - The pin layout can also be displayed on the running RPi by opening 
   the terminal and issue:
-
 ```
 pinout
 ```
