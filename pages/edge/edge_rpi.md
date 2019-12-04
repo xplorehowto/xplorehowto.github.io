@@ -90,25 +90,26 @@ Model           : Raspberry Pi 3 Model B Plus Rev 1.3
 
 - The pin layout can also be displayed on the running RPi by opening 
   the terminal and issue:
+
 ```
 pinout
 ```
 
 Output:
 ```
-,--------------------------------.
+'--------------------------------.
 | oooooooooooooooooooo J8     +====
 | 1ooooooooooooooooooo  PoE   | USB
 |  Wi                    oo   +====
 |  Fi  Pi Model 3B+ V1.3 oo      |
-|        ,----.               +====
+|        '----.               +====
 | |D|    |SoC |               | USB
 | |S|    |    |               +====
-| |I|    `----'                  |
+| |I|    '----'                  |
 |                   |C|     +======
 |                   |S|     |   Net
 | pwr        |HDMI| |I||A|  +======
-`-| |--------|    |----|V|-------'
+'-| |--------|    |----|V|-------'
 
 Revision           : a020d3
 SoC                : BCM2837
@@ -193,11 +194,12 @@ Note:
 - 4.19 corresponds to Debian 10 (Buster); 
 - part of 4.9 & 4.14 corresponds to Debian 9 (Stretch) 
 
+  
 *Source*: [Raspbian](https://en.wikipedia.org/wiki/Raspbian)
 
 ## Setup
 
-## Change hostname
+### Change hostname
 
 The hostname should be letters 'a' to 'z' (upper or lower), digits '0' to '9', and 
 the dash '-'.
@@ -214,6 +216,7 @@ sudo nano /etc/hostname
 
 - [Alternative] Change using raspi-config; select “Hostname” from the menu.
 
+  
 ### Increase Swap Space
 
 Increasing swap space is commonly done prior to compilation of native code, 
@@ -289,6 +292,7 @@ Reference:
 ```
 info
 ```
+
 Output:
 ```
 File: dir,      Node: Top,      This is the top of the INFO tree.
