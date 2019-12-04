@@ -19,7 +19,7 @@ TBD
 setx HOME "%USERPROFILE%"
 ```
 
-- Preset environment variables
+Preset environment variables
 ```
 echo %USERPROFILE%
 ```
