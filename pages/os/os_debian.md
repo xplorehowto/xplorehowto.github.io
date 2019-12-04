@@ -11,7 +11,7 @@ folder: os
 
 ## How-to
 
-## Setting Environment vars
+### Setting Environment vars
 
 ```
 export K3S_URL="https://rpik3ssvr:6443"
@@ -20,7 +20,7 @@ export K3S_URL="https://rpik3ssvr:6443"
 
 ## References 
 
-- [The Linux Documentation Project](http://www.tldp.org/guides.html){:target="_blank"}
+- [The Linux Documentation Project](http://www.tldp.org/guides.html){:target="_blank"} 
   compilation of books, references, etc.; all free;
   
 - [](){:target="_blank"}
