@@ -6,16 +6,20 @@ allowed-tags:
   - aws
   - cloud
   - coding
+  - debian
   - docker
   - edge
   - embedded
   - gcp
   - getting_started
   - language
+  - linux
   - ml
   - news
+  - os
   - references
   - rpi
   - software_development
   - tf
   - tools
+  - windows

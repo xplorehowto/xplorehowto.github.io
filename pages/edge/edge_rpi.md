@@ -155,6 +155,22 @@ details.
 
 *Source*: [raspberrypi.org - GPIO](https://www.raspberrypi.org/documentation/usage/gpio/)
 
+  
+### Power Up
+
+RPi does not have BIOS. Diagnostic during booting will be based solely on the
+various LEDs on the board. For all models of RPi:
+- LED1: Green (labeled ACT) means SD card is connected
+- LED2: Red (labeled PWR) means getting 3.3 V power, and should remain on
+  
+During booting sequence, the LED2 will flicker on then off, pause a moment, 
+then pulse on and offf again as the boot code read off the SD card.
+
+Refer to  
+[How to fix Raspberry Pi boot problems](https://www.techradar.com/how-to/computing/how-to-fix-raspberry-pi-boot-problems-1310697)
+for more details on the booting LEDs on/off sequences.
+
+
 ## Installation Raspbian OS
 
 ### Download the Raspbian OS binary
@@ -162,12 +178,12 @@ details.
 *Source*: [raspberrypi.org - Download](https://www.raspberrypi.org/downloads/)
 
 
-### Install on microSD card
+### Prepare Raspbian OS on microSD card
 
 *Source*: [Installing operating system images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
 
-### Install on USB Flash drive or SSD
+### Prepare Raspbian OS on USB Flash drive or SSD
 
 USB mass storage boot is available out of the box on Raspberry Pi 2B v1.2, 3A+, 
 3B, and 3B+ only. Support for RPi 4B in will be available in future software 
@@ -179,12 +195,22 @@ References:
 
 - [USB mass storage boot](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md)
 
+### Headless Install - Finding the IP address
+
+When installing Raspbian OS on RPI using *headless* setup, meaning RPi is not
+connected to external monitor and keyboard but it has been preconfigured with
+wifi setup and SSH, the IP address needs to be identified for making the SSH
+connectionb.
+
+- TBD 
+
 ### Raspbian OS version
 
 - Check on device raspbian os version
 ```
 uname --all
 ```
+
 Output:
 ```
 Linux raspberrypi 4.19.75-v7+ #1270 SMP Tue Sep 24 18:45:11 BST 2019 armv7l GNU/Linux
@@ -215,6 +241,20 @@ sudo nano /etc/hostname
 
 - [Alternative] Change using raspi-config; select “Hostname” from the menu.
 
+
+### SSH Keys
+
+- TBD
+
+- On windows
+```
+ls -l ~/.ssh/id_rsa.pub
+```
+
+- Copy to RPI
+```
+ssh-copy-id pi@raspberrypi.local
+```
   
 ### Increase Swap Space
 
