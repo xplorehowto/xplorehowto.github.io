@@ -9,10 +9,18 @@ folder: os
 
 ## Overview
 
+## How-to
+
+## Setting Environment vars
+
+```
+export K3S_URL="https://rpik3ssvr:6443"
+```
+
 
 ## References 
 
-- Software Engineering for Embedded Systems, 2nd Edition, by Mark Kraeling; 
-  Robert Oshana; see OReilly Safari online;
+- [The Linux Documentation Project](http://www.tldp.org/guides.html){:target="_blank"}
+  compilation of books, references, etc.; all free;
   
 - [](){:target="_blank"}
