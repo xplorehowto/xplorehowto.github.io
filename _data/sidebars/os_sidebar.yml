@@ -25,13 +25,13 @@ entries:
     - title: Summary
       url: /os
       output: web
-    - title: References
-      url: /os_refs
-      output: web
 
   - title: Linux
     output: web, pdf
     folderitems:
+    - title: Fundamentals
+      url: /os_linux
+      output: web
     - title: Debian
       url: /os_debian
       output: web

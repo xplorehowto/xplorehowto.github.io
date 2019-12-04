@@ -9,6 +9,11 @@ folder: os
 
 ## Operating System
 
-OS types include:
+OS types:
 - Linux (Ubuntu, etc.)
 - Windows
+
+
+## References
+
+- [TBD](){:target="_blank"}

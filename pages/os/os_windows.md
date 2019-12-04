@@ -9,10 +9,27 @@ folder: os
 
 ## Overview
 
+TBD
+
+## How-to
+
+### Setting Environment vars
+
+```
+setx HOME "%USERPROFILE%"
+```
+
+- Preset environment variables
+```
+echo %USERPROFILE%
+```
+
+
+## Windows Subsystem for Linux (WSL)
+
+Refer to [How to Install Ubuntu on Windows 10 (WSL)](https://linoxide.com/distros/how-install-ubuntu-windows-10/)
+ 
 
 ## References 
-
-- Software Engineering for Embedded Systems, 2nd Edition, by Mark Kraeling; 
-  Robert Oshana; see OReilly Safari online;
   
-- [](){:target="_blank"}
+- [TBD](){:target="_blank"}
