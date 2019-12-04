@@ -32,7 +32,7 @@ entries:
   - title: Raspberry Pi
     output: web, pdf
     folderitems:
-    - title: Tips & Tricks
+    - title: Hardware, OS & System Setup
       url: /edge_rpi
       output: web
 
