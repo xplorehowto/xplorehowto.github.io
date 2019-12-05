@@ -256,6 +256,12 @@ sudo /etc/rc.local
 /etc/apt/sources.list.d/*
 ```
 
+### Hosts
+```
+/etc/hosts
+```
+
+
 ### rc.local
 ```
 /etc/rc.local
