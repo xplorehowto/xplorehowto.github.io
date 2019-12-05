@@ -144,6 +144,12 @@ sudo docker run hello-world
 docker container run -it --rm --name sample alpine /bin/sh
 ```
 
+## Remove all stop process
+```
+docker rm $(docker ps -a -q)
+```
+
+
 ## Transfer image between host without using docker image repository
 
 Ideally, the docker image is shared using the docker repository. However, if
