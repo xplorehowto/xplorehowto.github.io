@@ -6,12 +6,14 @@ allowed-tags:
   - aws
   - cloud
   - coding
+  - container
   - debian
   - docker
   - edge
   - embedded
   - gcp
   - getting_started
+  - kubernetes
   - language
   - linux
   - ml
@@ -20,6 +22,7 @@ allowed-tags:
   - references
   - rpi
   - software_development
+  - technology
   - tf
   - tools
   - windows

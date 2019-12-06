@@ -200,7 +200,7 @@ References:
 When installing Raspbian OS on RPI using *headless* setup, meaning RPi is not
 connected to external monitor and keyboard but it has been preconfigured with
 wifi setup and SSH, the IP address needs to be identified for making the SSH
-connectionb.
+connection.
 
 - TBD 
 
@@ -230,13 +230,12 @@ The hostname should be letters 'a' to 'z' (upper or lower), digits '0' to '9', a
 the dash '-'.
   
 Reboot is needed. 
-
-- Change from terminal
-  The `hostname` is in the `/etc/hostname`; the file contains one line only, 
-  the hostname. 
+  
+From the terminal, change the `hostname` in the `/etc/hostname` file; 
+the file contains one line only, and it's the hostname. 
 ```
 sudo nano /etc/hostname
-# change the intended hostname
+# change to the intended hostname
 ```
 
 - [Alternative] Change using raspi-config; select “Hostname” from the menu.

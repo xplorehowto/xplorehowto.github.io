@@ -1,7 +1,7 @@
 ---
-title: Software Coding - Docker
-keywords: software, development, coding, docker
-tags: [software_development, coding]
+title: Technology - Docker
+keywords: software, technology, container, docker
+tags: [technology, container, docker]
 sidebar: coding_sidebar
 permalink: /coding_docker
 folder: coding

@@ -2,7 +2,7 @@
 
 entries:
 - title: Sidebar
-  product: Coding
+  product: Software
   version:  
   folders:
 
@@ -43,3 +43,6 @@ entries:
     - title: Docker
       url: /coding_docker
       output: web
+    - title: Kubernetes
+      url: /coding_k8s
+      output: web      

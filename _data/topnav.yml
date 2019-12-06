@@ -14,7 +14,7 @@ topnav_dropdowns:
           url: /aws
         - title: Cloud - GCP
           url: /gcp
-        - title: Coding
+        - title: Software
           url: /coding
         - title: Edge Computing
           url: /edge
