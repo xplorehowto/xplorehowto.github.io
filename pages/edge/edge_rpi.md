@@ -18,21 +18,19 @@ Website: [raspberrypi.org](https://www.raspberrypi.org/)
     [Source: wikipedia]" 
     max-width=800%}
 
-- Quick way to identify the model on RPi
+Quick way to identify the model on RPi
 ```
 cat /sys/firmware/devicetree/base/model
 ```
-
 Output:
 ```
 Raspberry Pi 3 Model B Plus Rev 1.3
 ```
 
-- To identify CPU hardware model and revision
+To identify CPU hardware model and revision
 ```
 cat /proc/cpuinfo
 ```
-
 Output:
 ```
 processor       : 0
@@ -88,8 +86,8 @@ Model           : Raspberry Pi 3 Model B Plus Rev 1.3
     [Source: raspberrypi.org]" 
     max-width=600%}
 
-- The pin layout can also be displayed on the running RPi by opening 
-  the terminal and issue:
+The pin layout can also be displayed on the running RPi by opening 
+the terminal and issue:
 ```
 pinout
 ```
@@ -146,14 +144,13 @@ GPIO26 (37) (38) GPIO20
 For further information, please refer to https://pinout.xyz/
 ```
 
-- For interactive pinout diagram, go to https://pinout.xyz/
+For interactive pinout diagram, go to https://pinout.xyz/
 
-  
+    
 In addition to IO, the GPIO pins are used for a variety of functions, such as:
-PWM (pulse-width modulation), SPI, I2C and Serial. See *source* below for 
-details.
-
-*Source*: [raspberrypi.org - GPIO](https://www.raspberrypi.org/documentation/usage/gpio/)
+PWM (pulse-width modulation), SPI, I2C and Serial. 
+See [raspberrypi.org - GPIO](https://www.raspberrypi.org/documentation/usage/gpio/)
+for details.
 
   
 ### Power Up
@@ -165,25 +162,43 @@ various LEDs on the board. For all models of RPi:
   
 During booting sequence, the LED2 will flicker on then off, pause a moment, 
 then pulse on and offf again as the boot code read off the SD card.
-
-Refer to  
+  
 [How to fix Raspberry Pi boot problems](https://www.techradar.com/how-to/computing/how-to-fix-raspberry-pi-boot-problems-1310697)
-for more details on the booting LEDs on/off sequences.
+provides more details about the booting LEDs on/off sequences.
 
 
 ## Installation Raspbian OS
 
 ### Download the Raspbian OS binary
 
-*Source*: [raspberrypi.org - Download](https://www.raspberrypi.org/downloads/)
+- The [raspberrypi.com main Download](https://www.raspberrypi.org/downloads/) page 
+provides the latest version of Raspbian only
+  
+- For older version raspbian, go to [download archive](http://downloads.raspberrypi.org/raspbian/images/)
+
+There are three versions, differ by size:
+- Raspbian Buster with desktop and recommended software
+- Raspbian Buster with desktop
+- Raspbian Buster Lite; no desktop and typically used for server mode with
+  headless access
+
+### Prepare Raspbian OS 
+
+#### - On microSD card
+
+Follow the instructions on: [Installing operating system images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+  
+**Notes about the size of microSD card:**
+- For SD card *up to 32 GB*, flashing to SD card can be easily done using 
+  **Etcher** as discussed below. 
+  [Source](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+
+- For SD card of *64GB or larger*, also known as *SDXC card*, it needs to be
+  formatted with the *exFAT filesystem*; not yet discussed here; Please reference
+  to [SDXC formatting](https://www.raspberrypi.org/documentation/installation/sdxc_formatting.md)
 
 
-### Prepare Raspbian OS on microSD card
-
-*Source*: [Installing operating system images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
-
-
-### Prepare Raspbian OS on USB Flash drive or SSD
+#### - On USB Flash drive or SSD
 
 USB mass storage boot is available out of the box on Raspberry Pi 2B v1.2, 3A+, 
 3B, and 3B+ only. Support for RPi 4B in will be available in future software 
@@ -191,7 +206,7 @@ update (Per Nov 2019). **Note:** an extra step is needed for RPi 3A+ and 3B only
 to enable USB host boot mode, by setting the USB host boot mode bit in the OTP 
 (one-time programmable) memory.
 
-References:
+Source:
 
 - [USB mass storage boot](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md)
 
@@ -206,7 +221,7 @@ connection.
 
 ### Raspbian OS version
 
-- Check on device raspbian os version
+Check on device raspbian os version
 ```
 uname --all
 ```
@@ -237,8 +252,8 @@ the file contains one line only, and it's the hostname.
 sudo nano /etc/hostname
 # change to the intended hostname
 ```
-
-- [Alternative] Change using raspi-config; select “Hostname” from the menu.
+  
+[Alternative] Change using raspi-config; select “Hostname” from the menu.
 
 
 ### SSH Keys
@@ -322,15 +337,13 @@ Reference:
 - https://raspberry-projects.com/pi/pi-operating-systems/win32diskimager
 
 
-## Tips & Tricks
+## Useful commands
 
-### Useful commands
-
-- Info
+### - Info
 ```
 info
 ```
-
+  
 Output:
 ```
 File: dir,      Node: Top,      This is the top of the INFO tree.
@@ -355,6 +368,46 @@ Basics
 * Finding files: (find).        Operating on files matching certain criteria.
 [...]
 ```
+
+### - Disk Usage
+Disk usage; `-h` - human readable; `-s` - summary;
+```
+du -hs
+```
+Output:
+```
+48k
+```
+  
+Disk Free
+```
+df -h
+```
+Output:
+```
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        30G  1.4G   27G   5% /
+devtmpfs        428M     0  428M   0% /dev
+tmpfs           433M     0  433M   0% /dev/shm
+tmpfs           433M  5.9M  427M   2% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           433M     0  433M   0% /sys/fs/cgroup
+/dev/mmcblk0p1  253M   52M  201M  21% /boot
+tmpfs            87M     0   87M   0% /run/user/1000
+```
+
+### - RAM Usage
+State of memory
+```
+free -h
+```
+Output
+```
+              total        used        free      shared  buff/cache   available
+Mem:          864Mi        50Mi       740Mi       5.0Mi        74Mi       758Mi
+Swap:          99Mi          0B        99Mi
+```
+Note: [increase swap space](#increase-swap-space)
 
 ## Cloud hosting of RPi
 
