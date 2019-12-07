@@ -780,7 +780,6 @@ Putty is a free SSH client that can be downloaded from
     format (as a .ppk file)
  
 
-
 ### SCP - Secure Copy
 
 Use `SCP` to tranfer file from a computer or laptop to RPi. 
@@ -823,6 +822,59 @@ For Windows computer, download and setup the free
 
 Source: [Secure Copy](https://www.raspberrypi.org/documentation/remote-access/ssh/scp.md){:target="_blank"}
 
+
+### Other methods to connect to RPi
+
+- [Connect Your Headless Pi to a Library WiFi Network](https://www.instructables.com/id/Connect-Your-Headless-Pi-to-a-Library-WiFi-Network/){:target="_blank"}
+  - Need USB-to-Serial cable, and know how to connect to RPi serial pins; 
+  - need to preinstall command line browser w3m
+  - need wifi ssid and passphrase (if not public); otherwise scan the ssid after
+    making serial connection to RPi as discussed below;
+  - after boot, use putty to connect serial to RPi
+  - [optional] scan for wifi ssid
+    ```
+    sudo iwlist wlan0 scan
+    ```
+  - connect to wifi; use `raspi-config` if it works on the putty serial terminal,
+    otherwise modify the wifi config file, `/etc/wpa_supplicant/wpa_supplicant.conf`
+    to add additional wifi network and restart the wifi or reboot RPi:
+    ```
+    network={
+      ssid="<replace_with_ssid>"
+      key_mgmt=NONE
+      scan_ssid=1
+      id_str="networkName"
+    }
+    ```
+  - to run w3m to accept wifi terms of use
+    ```
+    w3m https://www.google.com/
+    ```
+  - find the assigned ip address to RPi, so that can connect using ssh
+  - if all goes well, disconnect the serial connection and continue working with
+    ssh terminal
+
+- Connect to laptop Mobile hotspot
+  - Need USB-to-Serial cable, and know how to connect to RPi serial pins; 
+  - On Windows 10 - Search, type `network status`, and select the match to open
+    the "Network Status" screen
+  - on the left navigation, select Mobile hotspot
+  - on the "Mobile hotspot" screen, slide to "on" the 
+    "Share my internet connection with other devices"
+  - feel free to revise the network name if too long or complicated
+  - also feel free to revise the auto-generated password
+  - on the RPi, use `raspi-config` to connect to the wifi; the wifi info will
+    be saved to the wifi config file, `/etc/wpa_supplicant/wpa_supplicant.conf`
+  - [alternative] modify the wifi config file, `/etc/wpa_supplicant/wpa_supplicant.conf`
+    to add additional wifi network and restart the wifi or reboot RPi:
+    ```
+    network={
+      ssid="<replace_with_ssid>"
+      key_mgmt=NONE
+      scan_ssid=1
+      id_str="networkName"
+    }
+    ```
 
 ## Useful commands
 
