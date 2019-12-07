@@ -256,6 +256,13 @@ sudo /etc/rc.local
 /etc/apt/sources.list.d/*
 ```
 
+### File System Table - fstab
+```
+/etc/fstab
+```
+Add entry in the `fstab` file to persist mount point across reboot
+
+
 ### Hosts
 ```
 /etc/hosts
@@ -266,7 +273,7 @@ sudo /etc/rc.local
 ```
 /etc/rc.local
 ```
-[Example - setup startup program](os_debian##configure-program-to-run-at-boot)
+[Example - setup startup program](#configure-program-to-run-at-boot)
 
 
 ### Timezone
