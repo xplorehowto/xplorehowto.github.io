@@ -21,6 +21,12 @@ library running in user space; there are many more such user space libraries.
 It is the default shell on Debian OS.
   
 
+## Shell Scripts
+
+Source: 
+- [LinuxCommand.org](http://linuxcommand.org/index.php){:target="_blank"}
+
+- The Linux Command Line book [download here](https://sourceforge.net/projects/linuxcommand/files/TLCL/19.01/TLCL-19.01.pdf/download){:target="_blank"}
 
 ## References
 
