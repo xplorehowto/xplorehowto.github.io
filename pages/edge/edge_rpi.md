@@ -17,6 +17,16 @@ Website: [raspberrypi.org](https://www.raspberrypi.org/){:target="_blank"}
     caption="Raspberry Pi Models; 
     [Source: wikipedia]" 
     max-width=800%}
+  
+
+| Pi Model | RAM | Processor | Video |
+|-------|--------|---------|---------|
+| 4 | 1,2&4GB LPDDR4 SDRAM | 1.5GHz 64-bit quad-core ARM Cortex-A72 BCM2711 (ARMv8) | Brcm VideoCore VI multimedia/3D graphics |
+| 3 B+ | 1GB LPDDR2 SDRAM | 1.4GHz 64-bit quad-core ARM Cortex-A53 BCM2837B0 (ARMv7) | Brcm VideoCore IV multimedia/3D graphics |
+| Zero Wireless | 512MB RAM | 1.0GHz 32-bit single-core ARM1176JZF BCM2835 (ARMv6) | Brcm VideoCore IV 1080p30 |
+| CM 3 Lite | 1GB LPDDR2 SDRAM | 1.2GHz 64-bit quad-core ARM Cortex-A53 BCM2837BO (ARMv7) | none |
+| CM 3+ | 8,16,32GB LPDDR2 SDRAM | 1.2GHz 64-bit quad-core ARM Cortex-A53 BCM2837BO (ARMv7) | none |
+
 
 Quick way to identify the model on RPi
 ```bash
@@ -166,7 +176,14 @@ then pulse on and offf again as the boot code read off the SD card.
   
 [How to fix Raspberry Pi boot problems](https://www.techradar.com/how-to/computing/how-to-fix-raspberry-pi-boot-problems-1310697){:target="_blank"}
 provides more details about the booting LEDs on/off sequences.
-
+  
+Because lack of BIOS, the system configuration parameters that would normally 
+be kept and set using the BIOS are now stored in a text file named `config.txt`.
+The `config.txt` file is read by the GPU before the ARM core is initialized.
+The `config.txt` file is an optional file on the boot partition and it can be
+found in `/boot/config.txt`.
+  
+See [RPiconfig](https://elinux.org/RPiconfig){:target="_blank"} for details.
 
 ## Installation Raspbian OS
 
@@ -348,8 +365,8 @@ The content of the boot drive will be copied to the OS folder during
   - need at 128 MB GPU memory
   - optional, to turn-off the led while camera in use, set to 
     `disable_camera_led=1`
-
   - Next proceed to the [first boot](#first-boot-on-raspberry-pi)
+  - See [RPiconfig](https://elinux.org/RPiconfig){:target="_blank"} for details.
 
 
 ### First boot on Raspberry Pi
@@ -706,7 +723,36 @@ The mount point will not persist after reboot so `auto-mount` needs to be setup.
 sudo umount /media/usbdisk
 ```
 
-### Auto Start App/Svc after boot
+#### Additional References
+
+- [Adding an External Disk to a Raspberry Pi and Sharing it Over the Network](https://medium.com/@aallan/adding-an-external-disk-to-a-raspberry-pi-and-sharing-it-over-the-network-5b321efce86a){:target="_blank"}
+  covers how to share the mounted disk across network using protocols: 
+  NFS, AFS, and SMB.
+
+### Statup Script
+
+Startup scripts perform auto start of: command, application or services after 
+boot. This is useful for powering up RPi headless and without additional user
+intervention. Headless RPi is access using `ssh`.
+  
+There are three mechanisms to invoke startup scripts after boot:
+- [rc.local](https://www.raspberrypi.org/documentation/linux/usage/rc-local.md)
+  `rc.local` has drawbacks: not all programs will run reliably, because not all 
+  services may be available when rc.local runs. Stretch and Buster use systemd. 
+  
+- [systemd](https://www.raspberrypi.org/documentation/linux/usage/systemd.md){:target="_blank"}
+  this is a system service that can be start/stop enable/disable from the linux 
+  prompt. For more information: 
+  [systemd](https://www.raspberrypi.org/documentation/linux/usage/systemd.md), 
+  `man systemctl`, [What is an init System](https://fedoramagazine.org/what-is-an-init-system/){:target="_blank"}
+
+- [cron](https://www.raspberrypi.org/documentation/linux/usage/cron.md){:target="_blank"}
+  Cron is a tool for configuring scheduled tasks on linux systems. It is used 
+  to schedule commands or scripts to run periodically and at fixed intervals. 
+  Tasks range from backing up the user's home folders every day at midnight, 
+  to logging CPU information every hour.
+
+#### Example
 
 Assume there is a python script, `push_hold_shut.py`, in the home directory.
 
