@@ -448,14 +448,40 @@ the dash '-'.
   
 Reboot is needed. 
   
-From the terminal, change the `hostname` in the `/etc/hostname` file; 
+<span class="label label-default">Instructions - RPi:</span>
+
+- From the terminal, change the `hostname` in the `/etc/hostname` file; 
 the file contains one line only, and it's the hostname. 
 ```bash
 sudo nano /etc/hostname
 # change to the intended hostname
 ```
   
-[Alternative] Change using raspi-config; select “Hostname” from the menu.
+- [Alternative] Change using raspi-config; select “Hostname” from the menu.
+
+
+### Set a static IP address
+
+<span class="label label-default">Instructions - RPi:</span>
+
+- Configure `/etc/dhcpcd.conf`
+```
+sudo nano /etc/dhcpcd.conf
+```
+
+- Enter the following information, but adjust values to thee corresponding
+  environment
+```
+profile static_eth0
+static ip_address=192.168.1.100/24
+static routers=192.168.1.254
+static domain_name_servers=192.168.1.254
+```
+
+  **Note:**
+  - `routers` is the address of the gateway, see above. 
+  - `domain_name_servers` is the DNS address(es) from `/etc/resolv.conf`
+  - Also see `man dhcpcd.conf`
 
 
 ### Generate SSH Keys and Transfer to remote host 
