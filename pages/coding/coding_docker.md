@@ -12,7 +12,7 @@ folder: coding
 - Installation using Docker provided script; the script will detect hardware
   platform automatically; see below for manual installation steps.
 ```bash
-sudo apt-get update -y
+sudo apt-get update
 sudo apt-get dist-upgrade -y
 curl -sSL get.docker.com | sh
 ```

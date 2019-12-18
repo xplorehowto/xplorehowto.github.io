@@ -16,7 +16,9 @@ TBD
 ### Setting Environment vars
 
 ```
-setx HOME "%USERPROFILE%"
+set HOME="%USERPROFILE%"
+
+echo %HOME%
 ```
 
 Preset environment variables
