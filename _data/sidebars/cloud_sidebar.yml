@@ -28,6 +28,9 @@ entries:
     - title: References
       url: /cloud_refs
       output: web
+    - title: CDN
+      url: /cloud_cdn
+      output: web
 #    - title: API Services
 #      url: /cloud_svcs
 #      output: web
