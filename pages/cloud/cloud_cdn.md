@@ -13,7 +13,7 @@ folder: cloud
 {% include image.html file="misc/Roasting-Plant-bg.jpg" url="#" 
   caption="Coffee Roasting" max-width=400%}
 
-{% include image.html file="misc/DSC_5432_X_bg.jpg" url="#" 
+{% include image.html file="misc/DSC_5432_X_bg2.jpg" url="#" 
   caption="Coffee Roasting" max-width=400%}
 
 {% include image.html file="misc/coffee-roasting-steam-blowing.jpg" url="#" 
