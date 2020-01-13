@@ -38,6 +38,13 @@ board.
   
   - [MPLAB Snap debugger](https://www.microchip.com/developmenttools/ProductDetails/PartNO/PG164100){:target="_blank"}
 
+- ESP8266 versions
+  {% include image.html file="edge/esp-versions.jpg" url="#" 
+    caption="ESP8266 versions" 
+    max-width=400%}
+
+
+
 ## References 
   
 - [](){:target="_blank"}
