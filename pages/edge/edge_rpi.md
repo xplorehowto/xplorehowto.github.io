@@ -575,6 +575,8 @@ Tasks related to mounting USB drive include:
 - mount the drive
 - unmount
 
+Ref: https://www.raspberrypi.org/documentation/configuration/external-storage.md
+
 #### Format USB drive 
 
 <span class="label label-default">Instructions:</span>

@@ -33,6 +33,16 @@ date "+%H:%M:%S"
 /etc/timezone
 ```
 
+### Debian version
+
+```
+cat /etc/os-release
+cat /etc/debian_version
+```
+
+- [Check what Debian version you are running on your Linux system](https://linuxconfig.org/check-what-debian-version-you-are-running-on-your-linux-system)
+
+
 ## Manage User & Group
 
 ### Find a user's UID or GID
@@ -180,6 +190,9 @@ Also see:
 dpkg -l
 
 dpkg --get-selections | grep python3-picamera
+
+# list where package install files
+dpkg -L <packageName>
 ```
 
 ### - Web-based tool to search apt packages
@@ -187,6 +200,8 @@ dpkg --get-selections | grep python3-picamera
 - https://www.debian.org/distrib/packages
 
 - https://aur.archlinux.org/packages/
+
+- https://tracker.debian.org/
 
 
 ### - Install package
@@ -247,6 +262,11 @@ exit 0
 
 sudo /etc/rc.local
 ```
+
+### Setup SSH for putty and winscp
+
+- https://devops.ionos.com/tutorials/use-ssh-keys-with-putty-on-windows/
+
 
 ## `/etc`
 

@@ -142,6 +142,8 @@ sudo docker run hello-world
 
 ```
 docker container run -it --rm --name sample alpine /bin/sh
+
+docker exec -it <CONTAINER_ID_OR_NAME> bash
 ```
 
 ## Remove all stop process
@@ -170,3 +172,9 @@ docker save -o ./arm32v7-alpine_3-9-3.tar arm32v7-alpine:3.9.3
 cd ~
 docker load -i ./arm32v7-alpine_3-9-3.tar
 ```
+
+
+## References
+
+- [How to enable --squash feature of Docker](https://stackoverflow.com/questions/46565551/how-to-enable-squash-feature-of-docker-in-arch-linux)
+
